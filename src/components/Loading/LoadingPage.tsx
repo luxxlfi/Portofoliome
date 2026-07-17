@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Particles from "./Particles";
-import ShinyText from "../ShinyEf/Shiny";
+
 import TextType from "../TextEfect/Typing";
 
 export default function LoadingScreen() {

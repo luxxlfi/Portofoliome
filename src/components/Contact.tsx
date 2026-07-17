@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import LanyardUse from "./3dCard/LanyardUse";
+import { Mail, MessageCircle } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -115,67 +117,70 @@ export default function Contact() {
             <span className="block">Great</span>
           </h2>
 
-          <div className="contact-info mt-12 flex flex-col gap-4 text-sm font-bold">
-            <a
-              href="mailto:abyanluxfi@gmail.com"
-              className="text-neutral-400 underline underline-offset-8"
-            >
-              abyanluxfi@gmail.com
-            </a>
-
-            <p className="text-neutral-500">
-              Available for freelance & collaboration
+          <div className="contact-info mt-12">
+            <p className="max-w-md text-neutral-500 leading-relaxed">
+              Ready to turn your vision into an exceptional digital experience?
+              Let's build it together.
             </p>
+
+            <div className="mt-8 flex flex-col gap-5">
+              <a
+                href="mailto:abyanluxfi@gmail.com"
+                className="group flex items-center gap-3 text-neutral-300 hover:text-white transition-colors"
+              >
+                <Mail
+                  size={18}
+                  className="text-neutral-500 group-hover:text-white"
+                />
+                <span>abyanluxfi@gmail.com</span>
+              </a>
+
+              <a
+                href="https://github.com/luxxlfi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 text-neutral-300 hover:text-white transition-colors"
+              >
+                <FaGithub
+                  size={18}
+                  className="text-neutral-500 group-hover:text-white"
+                />
+                <span>github.com/luxxlfi</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/abyan-luthfi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 text-neutral-300 hover:text-white transition-colors"
+              >
+                <FaLinkedin
+                  size={18}
+                  className="text-neutral-500 group-hover:text-white"
+                />
+                <span>Abyan Luthfi</span>
+              </a>
+
+              <a
+                href="https://wa.me/6282238589905"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 text-neutral-300 hover:text-white transition-colors"
+              >
+                <MessageCircle
+                  size={18}
+                  className="text-neutral-500 group-hover:text-white"
+                />
+                <span>WhatsApp</span>
+              </a>
+            </div>
           </div>
-
-          {/* FOR */}
-
-          <form className="flex flex-col gap-8">
-            <div className="form-field border-b border-white/10 pb-4">
-              <label className="block text-[10px] uppercase tracking-widest text-neutral-500 mb-2">
-                Name
-              </label>
-
-              <input
-                type="text"
-                placeholder="Your name"
-                className="bg-transparent w-full outline-none text-sm placeholder:text-neutral-600"
-              />
-            </div>
-
-            <div className="form-field border-b border-white/10 pb-4">
-              <label className="block text-[10px] uppercase tracking-widest text-neutral-500 mb-2">
-                Email
-              </label>
-
-              <input
-                type="email"
-                placeholder="email@example.com"
-                className="bg-transparent w-full outline-none text-sm placeholder:text-neutral-600"
-              />
-            </div>
-
-            <div className="form-field border-b border-white/10 pb-4">
-              <label className="block text-[10px] uppercase tracking-widest text-neutral-500 mb-2">
-                Message
-              </label>
-
-              <textarea
-                placeholder="Tell me about your project..."
-                className="bg-transparent w-full outline-none text-sm resize-none h-24 placeholder:text-neutral-600"
-              />
-            </div>
-
-            <button className="contact-button bg-white text-black py-4 text-xs font-black uppercase tracking-widest">
-              Send Message
-            </button>
-          </form>
         </div>
 
         {/* 3D */}
 
         <div className="contact-form w-full ">
-          <LanyardUse  />
+          <LanyardUse />
         </div>
       </div>
 

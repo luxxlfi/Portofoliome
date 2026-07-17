@@ -11,36 +11,42 @@ const Navbar = () => {
   // Navbar entrance animation
   useEffect(() => {
     const ctx = gsap.context(() => {
+      if (!navRef.current || !logoRef.current || !menuRef.current) return;
+
+      const menuItems = Array.from(menuRef.current.children);
+
       const tl = gsap.timeline({
         defaults: {
-          ease: "power3.out",
+          ease: "power2.out",
         },
       });
 
+      // Navbar muncul
       tl.from(navRef.current, {
-        y: -40,
+        y: -24,
         opacity: 0,
-        duration: 0.8,
-      })
-        .from(
-          logoRef.current,
-          {
-            x: -30,
-            opacity: 0,
-            duration: 0.6,
-          },
-          "-=0.4",
-        )
-        .from(
-          menuRef.current?.children,
-          {
-            y: -20,
-            opacity: 0,
-            stagger: 0.1,
-            duration: 0.5,
-          },
-          "-=0.3",
-        );
+        duration: 0.6,
+      });
+
+      // Logo & menu muncul bersamaan
+      tl.from(
+        logoRef.current,
+        {
+          opacity: 0,
+          x: -15,
+          duration: 0.45,
+        },
+        "-=0.35",
+      ).from(
+        menuItems,
+        {
+          opacity: 0,
+          y: -12,
+          stagger: 0.08,
+          duration: 0.35,
+        },
+        "<",
+      );
     }, navRef);
 
     return () => ctx.revert();
@@ -62,9 +68,9 @@ const Navbar = () => {
   return (
     <nav
       ref={navRef}
-      className={`fixed top-0 left-0 w-full z-50 px-8 py-6 flex items-center justify-between ${
+      className={`fixed top-0 left-0 z-50 flex w-full items-center justify-between px-8 py-6 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#1a1a1a]/90 backdrop-blur-md border-b border-white/10 py-4"
+          ? "border-b border-white/10 bg-[#1a1a1a]/90 py-4 backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
@@ -80,7 +86,7 @@ const Navbar = () => {
       {/* Navigation */}
       <div
         ref={menuRef}
-        className="hidden md:flex items-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-white"
+        className="hidden items-center gap-8 text-[11px] font-bold uppercase tracking-[0.2em] text-white md:flex"
       >
         <a href="#about">About</a>
 
@@ -90,15 +96,18 @@ const Navbar = () => {
 
         <a href="#projects">Projects</a>
 
-        <a href="#contact" className="bg-white text-black px-6 py-3">
+        <a
+          href="#contact"
+          className="bg-white px-6 py-3 text-black transition-colors duration-300 hover:bg-neutral-200"
+        >
           Hire Me
         </a>
       </div>
 
       {/* Mobile Menu */}
-      <button className="md:hidden flex flex-col gap-1.5">
-        <span className="w-6 h-0.5 bg-white" />
-        <span className="w-6 h-0.5 bg-white" />
+      <button className="flex flex-col gap-1.5 md:hidden">
+        <span className="h-0.5 w-6 bg-white" />
+        <span className="h-0.5 w-6 bg-white" />
       </button>
     </nav>
   );

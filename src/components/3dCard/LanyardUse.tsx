@@ -1,7 +1,7 @@
 import Lanyard from "@/components/3dCard/Lanyard";
 
-import frontCard from "@/assets/front-card.jpg";
-import backCard from "@/assets/back-card.jpg";
+import frontCard from "@/assets/front-card.png";
+import backCard from "@/assets/back-card.png";
 import lanyardBand from "@/assets/lanyard.png";
 
 export default function LanyardUse() {
