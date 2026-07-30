@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import AppImage from "@/assets/Projects/MyorbitApp.jpg";
+import WebCircle from "@/assets/Projects/CircleWeb.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,14 +11,14 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "JobCompass",
-      category: "Fullstack / 2026",
-      image: "/projects/jcop.png",
+      title: "ORBIT",
+      category: "Circle web / 2026",
+      image: WebCircle,
     },
     {
-      title: "Portfolio Website",
-      category: "Creative Web / 2026",
-      image: "/projects/portfolio.png",
+      title: "MY ORBIT",
+      category: "Analisis Mobile App / 2026",
+      image: AppImage,
     },
   ];
 

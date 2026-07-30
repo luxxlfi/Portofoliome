@@ -10,21 +10,14 @@ const Experience = () => {
 
   const experiences = [
     {
-      year: "2026 — SEKARANG",
+      year: "2025 — SEKARANG",
       role: "FULLSTACK DEVELOPER",
       company: "Personal Projects & Development",
       description:
         "Membangun aplikasi web fullstack menggunakan teknologi modern seperti React, Next.js, TypeScript, Node.js, dan database. Fokus pada pengembangan sistem yang scalable dan user experience yang baik.",
     },
     {
-      year: "2025",
-      role: "FULLSTACK DEVELOPER INTERN",
-      company: "Surveyor Indonesia Medan Branch",
-      description:
-        "Mengembangkan dan melakukan maintenance aplikasi berbasis web. Berkontribusi dalam pembuatan fitur, pengelolaan database, serta perbaikan sistem menggunakan teknologi web.",
-    },
-    {
-      year: "2024 — 2025",
+      year: "2026 — 2026",
       role: "WEB DEVELOPER BOOTCAMP",
       company: "Fullstack Development Program",
       description:
