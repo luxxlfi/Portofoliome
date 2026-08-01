@@ -34,7 +34,7 @@ const techLogos = [
 export default function LogoUse() {
   return (
     <section className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6 fill-amber-50">
 
         <LogoLoop
           logos={techLogos}
@@ -43,6 +43,7 @@ export default function LogoUse() {
           logoHeight={55}
           gap={60}
           hoverSpeed={0}
+          className="fill-amber-50"
           fadeOut
           scaleOnHover
         />
