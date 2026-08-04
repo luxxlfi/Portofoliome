@@ -2,6 +2,8 @@ import Circle from "@/assets/Projects/CircleWeb.png";
 import CircleMobileApp from "@/assets/Projects/MyorbitApp.png";
 import ApiCircle from "@/assets/Projects/ApiCircle.png"
 import PisutjayaPt from "@/assets/Projects/PisutjayaPt.png"
+import Sky from "@/assets/Projects/SkyIsland.png"
+import doang from "@/assets/Projects/Doang.png"
 
 export interface Project {
   title: string;
@@ -48,5 +50,25 @@ export const projects: Project[] = [
     github: "https://github.com/luxxlfi/Company-Profile",
     demo: "https://pisutjayamandiri.com/",
   },
+
+    {
+    title: "Sky Island",
+    category: "Fantasy Adventure Exploration Game / 2025",
+    image: Sky,
+    description: "Sebuah game fantasy exploration yang menggabungkan petualangan, ekonomi, dan social hangout dalam dunia pulau langit yang penuh dengan visual unik. Pemain dapat menjelajahi area dengan berbagai tantangan untuk mencapai puncak, mengumpulkan reward, dan menggunakan hasil tersebut untuk membeli item, aura, serta perlengkapan yang membantu perjalanan mereka. Fokus utama dalam project ini adalah menciptakan pengalaman eksplorasi dengan environment fantasy yang imersif melalui desain map, pembuatan 3D model, dan pengembangan visual yang menjadi daya tarik utama game.",
+    github: "#",
+    demo: "https://www.roblox.com/games/118807785568786/GUNUNG-DOANG",
+  },
+
+
+  {
+    title: "Mountain Doang",
+    category: "Adventure Exploration Game / 2025",
+    image: doang,
+    description: "Sebuah game adventure bertema pegunungan yang menghadirkan pengalaman eksplorasi dengan berbagai obstacle dan tantangan. Pemain dapat menjelajahi area gunung yang luas, melewati jalur berbahaya, serta menghadapi berbagai rintangan yang membutuhkan ketangkasan dan strategi untuk mencapai puncak.",
+    github: "#",
+    demo: "https://www.roblox.com/games/118807785568786/GUNUNG-DOANG",
+  },
+
 
 ];
