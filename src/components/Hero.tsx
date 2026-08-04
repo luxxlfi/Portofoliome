@@ -125,7 +125,7 @@ export default function Hero() {
       <div className="hero-image absolute right-0 top-0 w-1/2 h-full opacity-30 grayscale">
         <img
           src={heroimage}
-          alt="Luxfi Developer"
+          alt="Luthfi Developer"
           className="w-full h-full object-cover object-[center_20%]"
         />
       </div>

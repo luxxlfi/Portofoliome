@@ -5,7 +5,7 @@ export default function NavUse() {
   return (
     <PillNav
       logo={logo}
-      logoAlt="Luxfi"
+      logoAlt="Luthfi"
       items={[
         { label: "About", href: "#about" },
         { label: "Skills", href: "#skills" },

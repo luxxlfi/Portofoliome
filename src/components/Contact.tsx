@@ -187,11 +187,11 @@ export default function Contact() {
       {/* Bottom Footer */}
       <div className="footer-bottom flex flex-col md:flex-row justify-between items-center border-t border-white/10 pt-12 gap-8">
         <div className="text-lg font-black tracking-tighter">
-          LUXFI<span className="text-neutral-500">.</span>
+          LUHFI<span className="text-neutral-500">.</span>
         </div>
 
         <div className="text-[10px] text-neutral-500 font-bold uppercase tracking-widest">
-          © 2026 LUXFI. ALL RIGHTS RESERVED.
+          © 2026 LUHFI. ALL RIGHTS RESERVED.
         </div>
 
         <div className="flex gap-8 text-[10px] font-bold uppercase tracking-widest text-neutral-400">
