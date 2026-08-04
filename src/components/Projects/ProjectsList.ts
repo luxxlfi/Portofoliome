@@ -36,8 +36,8 @@ export const projects: Project[] = [
     category: "Backend REST API / 2026",
     image: ApiCircle,
     description: "Backend REST API yang menjadi fondasi ekosistem Orbit untuk mendukung aplikasi web dan mobile. Dibangun dengan fokus pada autentikasi, pengelolaan data, dan arsitektur yang scalable sehingga dapat digunakan kembali di berbagai platform.",
-    github: "",
-    demo: "",
+    github: "https://github.com/luxxlfi/Circle-API",
+    demo: "https://github.com/luxxlfi/Circle-API",
   },
 
    {
@@ -45,8 +45,8 @@ export const projects: Project[] = [
     category: "Company Profile / 2026",
     image: PisutjayaPt,
     description: "Website company profile yang dikembangkan untuk memperkenalkan perusahaan, layanan, dan nilai bisnis secara profesional. Dibangun dengan fokus pada performa, desain responsif, dan kemudahan navigasi agar memberikan kesan terpercaya kepada calon klien.",
-    github: "",
-    demo: "",
+    github: "https://github.com/luxxlfi/Company-Profile",
+    demo: "https://pisutjayamandiri.com/",
   },
-  
+
 ];
