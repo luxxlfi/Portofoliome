@@ -57,7 +57,7 @@ export const projects: Project[] = [
     image: Sky,
     description: "Sebuah game fantasy exploration yang menggabungkan petualangan, ekonomi, dan social hangout dalam dunia pulau langit yang penuh dengan visual unik. Pemain dapat menjelajahi area dengan berbagai tantangan untuk mencapai puncak, mengumpulkan reward, dan menggunakan hasil tersebut untuk membeli item, aura, serta perlengkapan yang membantu perjalanan mereka. Fokus utama dalam project ini adalah menciptakan pengalaman eksplorasi dengan environment fantasy yang imersif melalui desain map, pembuatan 3D model, dan pengembangan visual yang menjadi daya tarik utama game.",
     github: "#",
-    demo: "https://www.roblox.com/games/118807785568786/GUNUNG-DOANG",
+    demo: "https://www.roblox.com/games/137662656457012/SKY-ISLAND",
   },
 
 
